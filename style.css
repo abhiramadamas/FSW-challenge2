@@ -3,18 +3,20 @@
     font-style: normal;
 }
 
+body {
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+}
+
 .navbar-brand {
-    position: relative;
     background: #0d28a6;
     width: 100px;
     height: 34px;
-    right: 26px;
 }
 
 .navbar {
-    padding-top: 0px;
-    padding-left: 150px;
-    padding-bottom: 0px;
+    padding: 1rem 0;
     background: #F1F3FF;
 }
 
@@ -58,10 +60,6 @@
     padding-bottom: 6px;
 }
 
-.navbar-collapse {
-    padding-left: 400px;
-}
-
 .home {
     background: #F1F3FF;
     margin-top: 57px;
@@ -73,11 +71,8 @@
 }
 
 .img-car {
-    position: relative;
-    top: 60px;
-    left: 13.5px;
-    width: 544px;
-    height: 433px;
+    width: 100%;
+    min-height: 100%;
 }
 
 .h1-txt-home {
@@ -118,7 +113,9 @@
 .col.services-txt p {
     margin-top: 24px;
 }
-
+#testimonial {
+    margin-bottom: 80px;
+}
 #why-us { 
     margin: 136px;
 }
@@ -184,24 +181,14 @@
     margin-top: 40px;
 }
 
-.mulai-sewa-mobil {
-    margin-top: 140px;
-    position: relative;
-    left: 50px;
+.cta-banner .container {
     background: #0D28A6;
-    border-radius: 13px;
     color: #FFFFFF;
-    width: 1168px;
-}
-
-.mulai-sewa-mobil p {
-    margin-top: 20px;
-    padding-left: 222px;
-    padding-right: 200px;
-}
-
-.mulai-sewa-mobil .cta-btn {
-    margin-top: 20px;
+    padding: 4rem 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 #faq {
@@ -245,18 +232,14 @@ footer .logo {
     background-color: #0d28a6;
   }
 
-  /* @media only screen and (max-width: 600px) {
-    .Home {
-        margin-top: 0em;
+  @media only screen and (max-width: 600px) {
+    nav{
+      width: 100vw;
+      margin-right: 0;
     }
 
-    .img-car{
-        width: 40vw;
-        height: fit-content;
+    .h1-txt-home{
+        width: 60vw;
     }
-    .col.txt{
-        width: 100%;
-    }
-} */
-
+}
 
